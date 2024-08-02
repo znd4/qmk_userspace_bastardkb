@@ -21,11 +21,14 @@ This is a template repository which allows for an external set of QMK keymaps to
 
 ## Howto build with GitHub
 
+// TODO mroe details, screenshots
+actions tab -- "I understand my workflows, go ahead and enable them"
+
 1. In the GitHub Actions tab, enable workflows
-1. Push your changes above to your forked GitHub repository
-1. Look at the GitHub Actions for a new actions run
-1. Wait for the actions run to complete
-1. Inspect the Releases tab on your repository for the latest firmware build
+2. Push your changes above to your forked GitHub repository
+3. Look at the GitHub Actions for a new actions run
+4. Wait for the actions run to complete
+5. Inspect the Releases tab on your repository for the latest firmware build
 
 ## Howto build locally
 
@@ -61,6 +64,10 @@ This can also be used to control which fork is used, though only upstream `qmk_f
 
 ## BastardKB specific instructions
 
-- Clone the bkb repo
+- Clone the bkb repo, switch to the right branch
 - point qmk install to that repo, eg `qmk config user.qmk_home=/home/qmk/bastardkb-qmk`
 - compile normally
+
+cd into userspace dir and qmk config user.overlay_dir="$(realpath .)"
+cd into main repo and qmk config user.qmk_home="$(realpath .)" 
+Or something like that. Docs should use the realpath thing (. when cding there first, subdir name when doing right after clone), that way the absolute path is abstracted away.
