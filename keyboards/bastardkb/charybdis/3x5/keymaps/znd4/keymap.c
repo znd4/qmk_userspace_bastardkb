@@ -92,9 +92,9 @@ static uint16_t auto_pointer_layer_timer = 0;
  */
 #define LAYOUT_LAYER_FUNCTION                                                                 \
     _______________DEAD_HALF_ROW_______________, KC_PSCR,   KC_F7,   KC_F8,   KC_F9,  KC_F12, \
-    ______________HOME_ROW_GACS_L______________, KC_SCRL,   KC_F4,   KC_F5,   KC_F6,  KC_F11, \
-    _______________DEAD_HALF_ROW_______________, KC_PAUS,   KC_F1,   KC_F2,   KC_F3,  KC_F10, \
-                      XXXXXXX, XXXXXXX, _______, XXXXXXX, XXXXXXX
+    ______________HOME_ROW_GACS_L______________, MS_LEFT, MS_DOWN,   MS_UP, MS_RGHT,  KC_F11, \
+    _______________DEAD_HALF_ROW_______________, MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR,  KC_F10, \
+                      XXXXXXX, XXXXXXX, _______, KC_BTN3, KC_BTN1
 
 /**
  * \brief Media layer.
